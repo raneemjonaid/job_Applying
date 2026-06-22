@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Junior Data Analyst",
+    "company": "nesr",
+    "location": "Dammam, Saudi Arabia",
+    "url": "https://boards.greenhouse.io/nesr/jobs/1",
+    "description": "We are looking for a Junior Data Analyst to clean datasets, build SQL queries, and create Power BI dashboards for operations reporting. Entry-level, 0-1 years experience.",
+    "source": "greenhouse",
+    "job_id": "1"
+  },
+  {
+    "title": "Senior Backend Engineer",
+    "company": "stripe",
+    "location": "Remote - US",
+    "url": "https://boards.greenhouse.io/stripe/jobs/2",
+    "description": "5+ years experience building distributed payment systems in Go and Java. Must be based in the US.",
+    "source": "greenhouse",
+    "job_id": "2"
+  },
+  {
+    "title": "Business Intelligence Analyst",
+    "company": "netflix",
+    "location": "Riyadh, Saudi Arabia",
+    "url": "https://jobs.lever.co/netflix/3",
+    "description": "Build KPI dashboards and run EDA on subscriber data using SQL and Python. 1-2 years experience preferred.",
+    "source": "lever",
+    "job_id": "3"
+  }
+]

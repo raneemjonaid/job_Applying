@@ -1,0 +1,77 @@
+{
+  "name": "Raneem Jonaid",
+  "email": "raneemjonaid@gmail.com",
+  "location": "Khobar, Saudi Arabia",
+  "objective": "Data Analyst who turns raw, messy data into decisions that drive revenue, reduce risk, and improve operations. Skilled in SQL, Power BI, Python, and machine learning, with hands-on projects in risk segmentation, market analysis, and KPI dashboards.",
+  "target_titles": [
+    "Data Analyst",
+    "Junior Data Analyst",
+    "Business Intelligence Analyst",
+    "BI Developer",
+    "Reporting Analyst",
+    "Data Scientist (Entry-Level)",
+    "Junior Data Engineer"
+  ],
+  "seniority": "entry-level",
+  "locations": {
+    "mode": "onsite_hybrid",
+    "allowed": ["Khobar", "Dammam", "Riyadh", "Jeddah", "Saudi Arabia"],
+    "remote_ok": false,
+    "relocation_ok": false
+  },
+  "education": {
+    "degree": "B.S. Computer Information Systems (CIS)",
+    "university": "Imam Abdulrahman Bin Faisal University, Dammam",
+    "gpa": "4.41/5 (Second Class Honors)",
+    "graduation": "Aug 2025"
+  },
+  "skills": {
+    "data_analytics": ["Power BI", "SQL (T-SQL/SSMS)", "Excel", "Python (Pandas, NumPy, Seaborn, Scikit-learn)"],
+    "analytical_techniques": ["Data Cleaning", "Feature Engineering", "EDA", "Risk Segmentation", "KPI Development", "Machine Learning"],
+    "systems_design": ["System Analysis", "SRS Documentation", "UI/UX Prototyping", "Relational Databases", "HTML", "CSS"],
+    "soft_skills": ["Analytical Problem-Solving", "Detail-Oriented", "Teamwork", "Communication"]
+  },
+  "experience": [
+    {
+      "title": "Co-op Trainee",
+      "company": "Asturlab",
+      "location": "Khobar",
+      "duration": "Aug 2025, 2 months",
+      "highlights": [
+        "Improved data quality for analytical workflows by cleaning and structuring raw datasets",
+        "Accelerated UI development by applying prompt engineering with AI tools while redesigning admin pages"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Amazon Products Market Analysis",
+      "stack": ["Python (Pandas, Seaborn)", "SQL Server", "Power BI"],
+      "highlights": [
+        "Identified Logitech accounts for 339,100 monthly units sold as a competitive benchmark",
+        "Found 62% of top-rated products are priced under $25; review volume predicts rating better than price",
+        "Built a Power BI dashboard from 971 clean product records"
+      ]
+    },
+    {
+      "name": "Insurance Claims Risk Analysis",
+      "stack": ["T-SQL", "Python (Pandas, Seaborn, Scikit-learn)"],
+      "highlights": [
+        "Segmented policyholders into High/Low Risk groups using SQL CASE logic",
+        "Identified top 10 claim-likelihood factors using a Random Forest model",
+        "Delivered end-to-end pipeline: raw data -> EDA -> feature engineering -> ML classification"
+      ]
+    }
+  ],
+  "certifications": [
+    "McKinsey Forward Program (In Progress, 2026)",
+    "KAUST Academy AI Specialization Program",
+    "Data Analytics Essentials - Cisco Networking Academy"
+  ],
+  "languages": ["Arabic (Native)", "English (Fluent)"],
+  "dealbreakers": [
+    "Roles requiring 3+ years of professional experience",
+    "Fully remote roles outside Saudi Arabia",
+    "Roles unrelated to data/analytics (e.g. pure sales, pure customer support)"
+  ]
+}

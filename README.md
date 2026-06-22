@@ -1,6 +1,9 @@
-# Job Agent — Stage 1: Discovery
+# Job Agent
 
-Finds job listings and saves them to `jobs.json` for the next stage (matching).
+A staged pipeline for job discovery and matching.
+
+- **Stage 1 — Discovery** (`job_discovery.py`): finds job listings, saves to `jobs.json`.
+- **Stage 2 — Matching** (`job_matching.py`): scores `jobs.json` against `profile.json` using Claude, saves the ranked, worthwhile jobs to `matches.json`.
 
 ## Setup
 
@@ -37,6 +40,21 @@ python job_discovery.py --config sources.json --output jobs.json
 - LinkedIn job pages are often partially hidden behind a login wall when fetched logged-out, so manual-link results from LinkedIn may have a thinner description than what you'd see logged in. This is intentional: the script never logs in or automates your session, to stay clear of LinkedIn's bot-detection and avoid any risk to your account.
 - Please run a real pass on your own machine/environment and sanity-check the first batch of output before trusting it for later stages.
 
+## Stage 2: Matching
+
+Scores each job in `jobs.json` against `profile.json` (your skills, target titles,
+locations, dealbreakers) using Claude, and keeps only jobs above a minimum score.
+
+```bash
+export ANTHROPIC_API_KEY=your_key_here
+python job_matching.py --jobs jobs.json --profile profile.json --output matches.json --min-score 40
+```
+
+Each entry in `matches.json` has a `score` (0-100), a `verdict` (`strong` / `possible` / `skip`),
+and a `reason` explaining the fit. `jobs.sample.json` is a small fixture for testing the
+matching logic without needing live discovery results.
+
 ## Next stage
 
-Once you have a `jobs.json` you're happy with, the next piece is the matching layer: scoring each job against your profile and goals so the pipeline only carries forward the ones worth tailoring a CV for.
+Once you have a `matches.json` you're happy with, the next piece is Stage 3: tailoring a
+CV/cover letter per matched job.
